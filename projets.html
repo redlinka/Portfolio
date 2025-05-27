@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Header section-->
+    <header>
+      <div class="logo">
+        <img src="img/logowhite.svg" alt="Logo" height="55px">
+      </div>
+      <nav>
+        <ul class="menu">
+            <li><a href="projets-en.html" class="lang-button">EN</a></li>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="projets.html">Projects</a></li>
+          <li><a href="#contact" class="mail-button">Contact</a></li>
+          <li><a href="CV.pdf">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main page-->
+    <section id="home" class="home">
+        <h1 class="homeTitle">Mes Projets</h1>
+        <p class="subtitle">Découvrez mes projets</p>
+    </section>
+    <!--Projects section-->
+    <section id="projects" class="projects">
+        <div class="project-lr" id="tetris">
+            <div class="content">
+                <h2>oct 2024 / Jan 2025 - Tetris en Python</h2>
+                <p>Recréation du jeu TETRIS en utilisant uniquement les bibliothèques de base de python. Ajout de plusieurs variantes comme un mode 2 joueurs et un mode bloc bonus.</p>
+                <h3>Compétences clés</h3>
+                <ul class="skills-list" style="list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0;">
+                  <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #4F8A8B; padding: 6px 16px; background: transparent; color: #4F8A8B;">
+                    <span style="display: inline-block; width: 10px; height: 10px; background: #4F8A8B; margin-right: 8px;"></span>
+                    optimiser
+                  </li>
+                  <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #F9B208; padding: 6px 16px; background: transparent; color: #F9B208;">
+                    <span style="display: inline-block; width: 10px; height: 10px; background: #F9B208; margin-right: 8px;"></span>
+                    réaliser
+                  </li>
+                  <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #3572A5; color: white; margin-right: 8px;">Python</li>
+                  <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #6200ea; color: white;">UI/UX</li>
+                  <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #009688; color: white;">Algorithmie</li>
+                </ul>
+                <a href="https://github.com/redlinka/Tetris.git">voir sur Github</a>
+            </div>
+            <div class="project-image">
+                <img src="img/tetris.png" alt="Tetris screenshot">
+            </div>
+        </div>
+
+        <div class="project-rl" id="yams">
+            <div class="project-image">
+                <img src="img/yams.png" alt="Tetris screenshot">
+            </div>
+            <div class="content">
+                <h2>Avril 2025 - Yams en Java</h2>
+                <p>Programmation d'une version du jeu de Yams jouable sur un terminal. Implémentation d'une interface graphique en JavaFX et expension sur le gameplay loop initial.</p>
+                <h3>Compétences clés</h3>
+                <ul class="skills-list" style="list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0;">
+                  <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #4F8A8B; padding: 6px 16px; background: transparent; color: #4F8A8B;">
+                    <span style="display: inline-block; width: 10px; height: 10px; background: #4F8A8B; margin-right: 8px;"></span>
+                    optimiser
+                  </li>
+                  <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #9D4EDD; padding: 6px 16px; background: transparent; color: #9D4EDD;">
+                    <span style="display: inline-block; width: 10px; height: 10px; background: #9D4EDD; margin-right: 8px;"></span>
+                    collaborer
+                  </li>
+                  <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #F9B208; padding: 6px 16px; background: transparent; color: #F9B208;">
+                    <span style="display: inline-block; width: 10px; height: 10px; background: #F9B208; margin-right: 8px;"></span>
+                    réaliser
+                  </li>
+                  <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #b07219; color: white; margin-right: 8px;">Java/JavaFX</li>
+                  <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #6200ea; color: white;">UI/UX</li>
+                </ul>
+                <a href="https://github.com/yevhen-kefa/Yams.git">voir sur Github</a>
+            </div>
+        </div>
+        <div class="project-lr" id="senior">
+            <div class="content">
+                <h2>mars / mai 2025 - Projet SeniorNextDoor</h2>
+                <p>Développement d'un site web dynamique de rencontres pour personnes âgées en centre EHPAD. Le site permet d'envoyer et de recevoir des messages et de gérer un agenda en s's inscrivant a des évènements. Il était accessible sur internet et connecté à une base de données.</p>
+                <h3>Compétences clés</h3>
+                <ul class="skills-list" style="list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0;">
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #F9B208; padding: 6px 16px; background: transparent; color: #F9B208;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #F9B208; margin-right: 8px;"></span>
+                réaliser
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #E84545; padding: 6px 16px; background: transparent; color: #E84545;">
+                <span style="display: inline-block; width: 10px; height: 10px;  background: #E84545; margin-right: 8px;"></span>
+                conduire
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #3A6EA5; padding: 6px 16px; background: transparent; color: #3A6EA5;">
+                <span style="display: inline-block; width: 10px; height: 10px;  background: #3A6EA5; margin-right: 8px;"></span>
+                administrer
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #43AA8B; padding: 6px 16px; background: transparent; color: #43AA8B;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #43AA8B; margin-right: 8px;"></span>
+                gérer
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #9D4EDD; padding: 6px 16px; background: transparent; color: #9D4EDD;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #9D4EDD; margin-right: 8px;"></span>
+                collaborer
+              </li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #e34c26; color: white; margin-right: 8px;">HTML/CSS</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #f7df1e; color: #222; margin-right: 8px;">JavaScript</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #336791; color: white;">SQL</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #4F5D95; color: white;">PHP</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #ff9800; color: white;">Gestion de projet</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #6200ea; color: white;">UI/UX</li>
+            </ul>
+                <a href="https://github.com/oXoGus/SeniorNextDoor.git">voir sur Github</a>
+            </div>
+            <div class="project-image">
+                <img src="img/senior.png" alt="Tetris screenshot">
+            </div>
+        </div>
+
+        <div class="project-rl" id="unesco">
+            <div class="project-image">
+                <img src="img/unesco.png" alt="Tetris screenshot">
+            </div>
+            <div class="content">
+                <h2>oct 2024 / juin 2025 - Projet UNESCO</h2>
+                <p>Conception et mise en ligne d'un site web dynamique en partenariat avec l'UNESCO. Ce projet visait à promouvoir la médiation culturelle et linguistique autour du Taj Mahal, classé au patrimoine mondial.</p>
+                <h3>Compétences clés</h3>
+                <ul class="skills-list" style="list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0;">
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #F9B208; padding: 6px 16px; background: transparent; color: #F9B208;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #F9B208; margin-right: 8px;"></span>
+                réaliser
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #E84545; padding: 6px 16px; background: transparent; color: #E84545;">
+                <span style="display: inline-block; width: 10px; height: 10px;  background: #E84545; margin-right: 8px;"></span>
+                conduire
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #3A6EA5; padding: 6px 16px; background: transparent; color: #3A6EA5;">
+                <span style="display: inline-block; width: 10px; height: 10px;  background: #3A6EA5; margin-right: 8px;"></span>
+                administrer
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #43AA8B; padding: 6px 16px; background: transparent; color: #43AA8B;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #43AA8B; margin-right: 8px;"></span>
+                gérer
+              </li>
+              <li class="skill-item" style="display: flex; align-items: center; border: 1.5px solid #9D4EDD; padding: 6px 16px; background: transparent; color: #9D4EDD;">
+                <span style="display: inline-block; width: 10px; height: 10px; background: #9D4EDD; margin-right: 8px;"></span>
+                collaborer
+              </li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #e34c26; color: white; margin-right: 8px;">HTML/CSS</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #336791; color: white;">SQL</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #4F5D95; color: white;">PHP</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #ff9800; color: white;">Gestion de projet</li>
+              <li class="capsule-item" style="display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; background-color: #6200ea; color: white;">UI/UX</li>
+            </ul>
+                <a href="https://github.com/redlinka/Projet-Taj-Mahal.git">voir sur Github</a>
+            </div>
+        </div>
+    </section>
+    <!--Footer section-->
+    <footer>    
+        <div class="contacts" id="contact">
+          <div class="footer-block">
+            <h3>
+              Contactez-moi
+            </h3>
+              <div class="social-icons">
+                <img src="img/mail.svg" alt="Email icon">
+                <a href="mailto: nachnouchiadam@gmail.com" class="email-link">
+                  nachnouchiadam@gmail.com
+                </a>
+              </div>
+              <div class="social-icons">
+                <img src="img/tel.svg" alt="telephone icon">
+                <a href="tel:+33777286000" class="phone-link">
+                  +33 7 77 286 000
+                </a>
+              </div> 
+          </div>
+
+          <div class="footer-block">
+            <h3>
+              Suivez-moi
+            </h3>
+              <div class="social-icons">
+                <img src="img/github.png" alt="Github icon">
+                <a href="https://github.com/redlinka" class="github-link">
+                  github.com/redlinka
+                </a>
+              </div>
+              <div class="social-icons">
+                <img src="img/linkedin.png" alt="telephone icon">
+                <a href="https://www.linkedin.com/in/adam-nachnouchi" class="LinkedIn-link">
+                  linkedin.com/in/adam-nachnouchi/
+                </a>
+              </div> 
+          </div>
+
+          <div class="footer-block">
+            <h3>
+              messagez-moi directement
+            </h3>
+              <form action="https://formspree.io/f/xqaqvzly" method="POST" class="contact-form">
+                <div class="form-group">
+                  <label for="email">Votre email :</label><br>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="objet">Sujet :</label><br>
+                  <input type="text" id="objet" name="objet" required>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="message">Message :</label><br>
+                  <textarea id="message" name="message" aria-expanded="false" required></textarea>
+                </div>
+                <br>
+                <button type="submit">Envoyer</button>
+              </form>
+          </div>
+        </div>
+        <p>© 2023 Nachnouchi Adam. Tous droits réservés.</p>
+      </footer>
+</body>
