@@ -41,8 +41,8 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1em;
-  padding: 1em;
+  font-size: 1rem;
+  padding: 1rem;
   transition: color 0.35s ease-in-out;
 }
 
@@ -196,7 +196,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 5em;
-  padding: 10rem;
+  padding: 5rem;
   background-color: #444;
 }
 .skills  {
@@ -513,3 +513,86 @@ button:hover {
     margin: 0 5px;
   }
 }
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0 24px 0;
+  padding: 0;
+  list-style: none;
+}
+.timeline li {
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+  background: #333;
+  color: #222;
+  padding: 12px 8px;
+  margin: 0 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+}
+.timeline li strong {
+  color: #bc3131;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 6px;
+}
+.timeline li ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95em;
+}
+.timeline li ul li {
+  margin-bottom: 2px;
+  color: #555;
+}
+.timeline li.timeline-separator {
+  background: none;
+  box-shadow: none;
+  min-width: 32px;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline li.timeline-separator::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  margin: 0 auto;
+}
+.timeline li:first-child {
+  background: #bc3131;
+  color: #fff;
+  font-weight: bold;
+  min-width: 80px;
+}
+.timeline li:last-child {
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .timeline {
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: unset;
+  }
+  .timeline li, .timeline li.timeline-separator {
+    min-width: unset;
+    margin: 8px 0;
+  }
+  .timeline li.timeline-separator::before {
+    margin: 0;
+  }
+}
+
