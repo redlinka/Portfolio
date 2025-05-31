@@ -16,8 +16,35 @@ header {
   background-repeat: no-repeat;
   display: flex;
   padding: 5px;
-
 }
+
+/* Responsive: Hide logo and shrink font on small screens */
+@media (max-width: 700px) {
+  .logo {
+    display: none;
+    width: 0;
+  }
+  header {
+    padding: 0.2rem 0.2rem;
+    min-height: unset;
+    height: 48px;
+  }
+  nav a {
+    font-size: 0.75rem !important;
+    padding: 0.4rem 0.5rem !important;
+  }
+  .lang-button {
+    font-size: 0.75rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+  body {
+    font-size: 0.85rem !important;
+  }
+  nav ul {
+    margin-left: 0 !important;
+  }
+}
+
 .lang-button {
   background-color: #bc3131;
   color: #fff;
