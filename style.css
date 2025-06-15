@@ -8,7 +8,7 @@ header {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter:  blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 .logo {
@@ -36,6 +36,7 @@ nav ul {
   display: flex;  
   justify-content: flex-end; 
   text-wrap: nowrap;
+  margin: 0;
 }
 nav a {
   text-decoration: none;
@@ -43,6 +44,7 @@ nav a {
   font-size: 1rem;
   padding: 1rem;
   transition: color 0.35s ease-in-out;
+  display: flex;
 }
 nav a:hover {
   color: #bc3131;
@@ -51,36 +53,43 @@ nav a:hover {
 }
 .side-menu{
   margin-top: 0;
-  padding-top: 3rem;
+  padding-top: 0.5rem;
   position: fixed;
   transition: transform 0.3s ease-in-out;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000000000;
+  background-color: #222;
   backdrop-filter:  blur(10px);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1.3rem;
 }
 .menuButton {
   display: none;
 }
-@media (max-width: 650px) {
+@media (max-width: 800px) {
+  .side-menu {
+    margin-left: 0;
+  }
   .hideOnMobile {
     display: none;
   }
   .menuButton {
     display: block;
   }
+}
+@media (max-width: 500px) {
   .side-menu {
     width: 100%;
   }
-
+  .side-menu li {
+    margin-left: 50px;
+  }
 }
 /* Title */
 .home {
